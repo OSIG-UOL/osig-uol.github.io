@@ -1,2 +1,21 @@
 # Hello world
 Welcome to the OSIG-OL website.
+
+## Mission Statement
+The **Open Science Interest Group** (OSIG) of the Psychology Department identifies as a learning community and grass-roots movement initiated by scientific staff and students. It is open to anyone interested in improving their skills in making science transparent and reproducible. The OSIG aims at facilitating the discourse about OS practices in the department. Since following these principles can be demanding, time costly, and complicated at first, the OSIG was also established to bundle experience and knowledge and create a space in which researchers can support and strive towards more transparent research.
+
+In addition to providing a platform for exchange, the interest group actively develops ideas concerning the integration of open science techniques in the department. Small groups of interested members are then formed to implement these ideas. Inclusivity is very important to us, hence there are no prerequisites for active involvement. Our principle is that everyone can join and contribute as much as they like and is feasible for them. The OSIG is represented by its task force including members of all labs.
+
+The goals of the OSIG, therefore, include:
+
+- Supporting each other and encouraging the use of OS principles in our own research.
+- Providing a platform to work on OS related tasks that are important to the involved members. The study group can, for instance, be utilised to identify collaborators and document efforts.
+- Collecting, exchanging, and discussing OS related information. Results should be made accessible for interested researchers in the department by sharing documents and organizing information events.
+- Spreading information, e.g., about upcoming webinars/talks.
+
+## How to get involved
+Would you like to get involved? Resources and projects are coordinated via a Stud.IP study group. Important information and announcements are also sent around to all members of this group. If you are associated with the University of Oldenburg (student or staff) you can send a membership request [here](https://elearning.uni-oldenburg.de/dispatch.php/course/studygroup/details/62793789f65c00ca9acf3dfbed349662?again=yes) and we will approve you as soon as possible.
+
+We have biweekly meetings (Tuesdays 11-12 a.m. on uneven calendar weeks) that are open to everyone interested. You can join via the study group.
+
+If you have further questions, please do not hesitate to contact our members via the study group or the mailing list  or add your name to Openscience-Psychology mailing list to stay up to date with OS-related news and events.
