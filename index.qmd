@@ -1,6 +1,8 @@
 # Hello world
 Welcome to the OSIG-OL website.
 
+![](pics/team.jpeg)
+
 ## Mission Statement
 The **Open Science Interest Group** (OSIG) of the Psychology Department identifies as a learning community and grass-roots movement initiated by scientific staff and students. It is open to anyone interested in improving their skills in making science transparent and reproducible. The OSIG aims at facilitating the discourse about OS practices in the department. Since following these principles can be demanding, time costly, and complicated at first, the OSIG was also established to bundle experience and knowledge and create a space in which researchers can support and strive towards more transparent research.
 
