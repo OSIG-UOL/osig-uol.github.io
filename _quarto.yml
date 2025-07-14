@@ -6,6 +6,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: oosc.qmd
+        text: OOSC
       - href: about.qmd
         text: About
 
