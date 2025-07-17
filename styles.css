@@ -1,5 +1,59 @@
+/* Import Nunito Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
 /* css styles */
 .callout-note .callout-body {
     font-size: 5.5em; /* Adjust font size as needed */
     /* Add other CSS properties as needed, like background color, border, etc. */
+}
+
+/* Custom styles for specific subpage */
+.custom-subpage {
+    background-color: rgb(0, 62, 107) !important;
+    color: white !important;
+    font-family: 'Nunito Sans', sans-serif !important;
+    min-height: 100vh;
+}
+
+.custom-subpage h1,
+.custom-subpage h2,
+.custom-subpage h3,
+.custom-subpage h4,
+.custom-subpage h5,
+.custom-subpage h6 {
+    color: white !important;
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.custom-subpage p,
+.custom-subpage li,
+.custom-subpage td,
+.custom-subpage th {
+    color: white !important;
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.custom-subpage a {
+    color: #87CEEB !important; /* Light blue for links to maintain readability */
+}
+
+.custom-subpage a:hover {
+    color: #B0E0E6 !important; /* Lighter blue on hover */
+}
+
+/* Make sure table borders are visible on dark background */
+.custom-subpage table,
+.custom-subpage td,
+.custom-subpage th {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Ensure navbar and other elements work well with the dark background */
+.custom-subpage .navbar {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.custom-subpage .navbar-brand,
+.custom-subpage .nav-link {
+    color: white !important;
 }
