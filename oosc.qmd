@@ -1,4 +1,6 @@
 
+![](pics/banner.jpg)
+
 # 1st Oldenburg Open Science Conference 2025
 
 ## About the Conference
@@ -20,7 +22,7 @@ The 1st Oldenburg Open Science Conference aims to bring together students and re
 | 12:00 pm – 12:30 pm | Panel Discussion 1: Handling the Time Challenges of Open Science Practices for Early Career Researchers | |
 |                     | Prof. Dr. Andrea Hildebrandt, Dilan Barisan, Dr. Lisa Spitzer, Maximilian Frank | |
 | 12:30 pm – 01:30 pm | Lunch Break                                                       |        |
-| 01:30 pm – 02:30 pm | Keynote 2: Lukas Röseler – 45 min talk + 15 min discussion          |        |
+| 01:30 pm – 02:30 pm | Keynote 2: Lukas Röseler – 45 min talk + 15 min discussion          | [Slides](slides_oosc/talk_roeseler.pdf)       |
 | 02:30 pm – 03:15 pm | Poster Session: Research about Open Science Practices, Research implementing Open Science Practices | |
 | 03:15 pm – 03:30 pm | Coffee & Tea Break                                                 |        |
 | 03:30 pm – 04:30 pm | Research Talks 2                                                   |        |
@@ -34,3 +36,6 @@ The 1st Oldenburg Open Science Conference aims to bring together students and re
 
 ## Organizers
 The conference is organized by the Open Science Interest Group of the Carl von Ossietzky Universität Oldenburg. You can find more information about the group on our website.
+
+## Sponsors
+![](pics/sponsors.png)
