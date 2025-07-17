@@ -1,1 +1,8 @@
+---
+format:
+  html:
+    body-classes: custom-subpage
+---
+
 # Team
+![](pics/team.jpeg)

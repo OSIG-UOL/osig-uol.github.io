@@ -8,8 +8,6 @@ website:
         text: Home
       - href: oosc.qmd
         text: OOSC
-      - href: about.qmd
-        text: About
 
 
 format:
