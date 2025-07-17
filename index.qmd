@@ -1,3 +1,10 @@
+---
+format:
+  html:
+    linkcolor: rgb(0,62,107)
+    mainfont: Nunito Sans
+---
+
 # Hello world
 Welcome to the OSIG-OL website.
 

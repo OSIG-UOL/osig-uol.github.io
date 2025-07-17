@@ -2,6 +2,10 @@
 format:
   html:
     body-classes: custom-subpage
+    backgroundcolor: rgb(0,62,107)
+    fontcolor: white
+    mainfont: Nunito Sans
+    linkcolor: rgb(238, 113, 0)
 ---
 
 ![](pics/banner.jpg)
