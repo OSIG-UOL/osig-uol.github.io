@@ -20,12 +20,12 @@ The 1st Oldenburg Open Science Conference aims to bring together students and re
 | Time                | Event                                                                 | Slides |
 |---------------------|----------------------------------------------------------------------|--------|
 | 08:30 am – 09:00 am | Registration                                                        |        |
-| 09:00 am – 09:15 am | Welcome: OSIG members and funders (Hearing4All, RTG Neuromodulation) |        |
+| 09:00 am – 09:15 am | Welcome: OSIG members and funders (Hearing4All, RTG Neuromodulation) & GRN | [Slides](slides_oosc/talk_grn.pdf)       |
 | 09:15 am – 09:30 am | Foreword: Christina Beckers – UOL’s Open Science strategy           |        |
 | 09:30 am – 10:30 am | Research Talks 1                                                   |        |
 |                     | Prof. Dr. Jochem Rieger: The Philosophy of Open Science            |        |
-|                     | Dr. Johannes Voßkuhl: Error Culture in Science                     |        |
-|                     | Kim Braun and Christian Pauls: Open Access Publishing and Data Management Support at UOL | |
+|                     | Dr. Johannes Voßkuhl: Error Culture in Science                     | [Slides](slides_oosc/talk_vosskuhl.pdf)       |
+|                     | Kim Braun and Christian Pauls: Open Access Publishing and Data Management Support at UOL | [Slide](slides_oosc/talk_pauls_braun.pdf)|
 | 10:30 am – 11:00 am | Coffee & Tea Break                                                 |        |
 | 11:00 am – 12:00 pm | Keynote 1: Britta Westner – 45 min talk + 15 min discussion         |        |
 | 12:00 pm – 12:30 pm | Panel Discussion 1: Handling the Time Challenges of Open Science Practices for Early Career Researchers | |
@@ -35,7 +35,7 @@ The 1st Oldenburg Open Science Conference aims to bring together students and re
 | 02:30 pm – 03:15 pm | Poster Session: Research about Open Science Practices, Research implementing Open Science Practices | |
 | 03:15 pm – 03:30 pm | Coffee & Tea Break                                                 |        |
 | 03:30 pm – 04:30 pm | Research Talks 2                                                   |        |
-|                     | Dr. Julius Welzel: The Brain Imaging Data Structure (BIDS) for Data Sharing | |
+|                     | Dr. Julius Welzel: The Brain Imaging Data Structure (BIDS) for Data Sharing | [Slides](slides_oosc/talk_welzel.pdf)|
 |                     | Sumbul Jafri: Publishing Medical Data, The Oldenburg Hearing Health Repository | |
 |                     | Dr. Karel López Vilaret: The importance of metadata annotation and quality control in open science | |
 | 04:30 pm – 05:00 pm | Panel Discussion 2: Open Science Practices in Comparison Across Disciplines | |
