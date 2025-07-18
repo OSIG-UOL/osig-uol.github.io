@@ -25,7 +25,7 @@ The 1st Oldenburg Open Science Conference aims to bring together students and re
 | 09:30 am – 10:30 am | Research Talks 1                                                   |        |
 |                     | Prof. Dr. Jochem Rieger: The Philosophy of Open Science            |        |
 |                     | Dr. Johannes Voßkuhl: Error Culture in Science                     | [Slides](slides_oosc/talk_vosskuhl.pdf)       |
-|                     | Kim Braun and Christian Pauls: Open Access Publishing and Data Management Support at UOL | [Slide](slides_oosc/talk_pauls_braun.pdf)|
+|                     | Kim Braun and Christian Pauls: Open Access Publishing and Data Management Support at UOL | [Slides](slides_oosc/talk_pauls_braun.pdf)|
 | 10:30 am – 11:00 am | Coffee & Tea Break                                                 |        |
 | 11:00 am – 12:00 pm | Keynote 1: Britta Westner – 45 min talk + 15 min discussion         |        |
 | 12:00 pm – 12:30 pm | Panel Discussion 1: Handling the Time Challenges of Open Science Practices for Early Career Researchers | |
