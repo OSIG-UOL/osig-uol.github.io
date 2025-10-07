@@ -7,14 +7,21 @@ website:
       - href: index.qmd
         text: Home
       - href: oosc.qmd
-        text: OOSC
+        text: 1st OOSC
+  page-footer:
+    left: |
+      © 2025 Open Science Interest Group (OSIG)
+    right: |
+      [Imprint](https://uol.de/impressum) | [Privacy](https://uol.de/dism)
 
 
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, custom.scss]
     css: styles.css
     toc: true
-    grid: 
-      body-width: 1500px
-      sidebar-width: 50px
+    toc-depth: 3
+    number-sections: false
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true

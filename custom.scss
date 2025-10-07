@@ -1,0 +1,173 @@
+/*-- scss:defaults --*/
+
+// University of Oldenburg Official Colors
+// Primary brand colors
+$uol-blue-primary: rgb(0, 78, 159);      // Pantone 2945 - Main brand color
+$uol-blue-dark: rgb(0, 62, 107);         // Pantone 7693 - Dark blue
+$uol-teal: rgb(0, 120, 120);             // Pantone 3295
+$uol-orange-dark: rgb(213, 59, 10);      // Pantone 1665
+$uol-cyan: rgb(0, 171, 217);             // Pantone 2995
+$uol-green: rgb(0, 168, 121);            // Pantone 339
+$uol-orange: rgb(238, 113, 0);           // Pantone 152
+
+// Secondary/accent colors
+$uol-sky-blue: rgb(91, 197, 242);        // Pantone 298
+$uol-lime: rgb(148, 193, 28);            // Pantone 376
+$uol-yellow-orange: rgb(243, 145, 0);    // Pantone 144
+$uol-light-blue: rgb(161, 217, 248);     // Pantone 291
+$uol-yellow-green: rgb(199, 211, 0);     // Pantone 382
+$uol-yellow: rgb(253, 195, 0);           // Pantone 7408
+
+// Bootstrap color mappings using UOL palette
+$primary: $uol-blue-dark;                // Dark blue for primary actions
+$secondary: $uol-teal;                   // Teal for secondary elements
+$success: $uol-green;                    // Green for success states
+$info: $uol-cyan;                        // Cyan for info
+$warning: $uol-yellow;                   // Yellow for warnings
+$danger: $uol-orange-dark;               // Orange-red for danger/errors
+$light: #f8f9fa;
+$dark: $uol-blue-dark;
+
+// Typography
+$font-family-sans-serif: "Nunito Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 1.1rem;
+$line-height-base: 1.6;
+
+// Navbar
+$navbar-bg: $primary;
+$navbar-brand-color: white;
+$navbar-nav-link-color: white;
+
+/*-- scss:rules --*/
+
+// Custom styles
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, $primary 0%, lighten($primary, 10%) 100%);
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.team-card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform 0.2s;
+}
+
+.team-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+}
+
+.project-card {
+  border-left: 4px solid $primary;
+  background: $light;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.award-year {
+  background: $primary;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.publication-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.resource-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: $primary;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: darken($primary, 15%);
+}
+
+// Responsive improvements
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 2rem 0;
+  }
+  
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Language switcher styles
+.language-switch {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.language-switch a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.language-switch a:hover {
+  color: darken($primary, 15%);
+  text-decoration: underline;
+}
+
+// Navbar language selector improvements
+.navbar .nav-item .dropdown-menu {
+  min-width: 140px;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: rgba($primary, 0.1);
+  color: $primary;
+}
