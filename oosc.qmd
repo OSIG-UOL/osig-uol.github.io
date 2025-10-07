@@ -26,7 +26,7 @@ The 1st Oldenburg Open Science Conference aims to bring together students and re
 | 03:15 pm – 03:30 pm | Coffee & Tea Break                                                 |        |
 | 03:30 pm – 04:30 pm | Research Talks 2                                                   |        |
 |                     | Dr. Julius Welzel: The Brain Imaging Data Structure (BIDS) for Data Sharing | [Slides](slides_oosc/talk_welzel.pdf)|
-|                     | Sumbul Jafri: Publishing Medical Data, The Oldenburg Hearing Health Repository | |
+|                     | Sumbul Jafri: Publishing Medical Data, The Oldenburg Hearing Health Repository | [Slides](slides_oosc/talk_sumbul.pdf)|
 |                     | Dr. Karel López Vilaret: The importance of metadata annotation and quality control in open science | |
 | 04:30 pm – 05:00 pm | Panel Discussion 2: Open Science Practices in Comparison Across Disciplines | |
 |                     | Dr. Naska Goagoses, Dr. Lena Schell-Majoor, Julia Pauquet          |        |
