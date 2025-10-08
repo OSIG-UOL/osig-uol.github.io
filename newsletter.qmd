@@ -1,0 +1,79 @@
+---
+title: "Newsletter"
+---
+
+# OSIG Oldenburg Newsletter
+
+## Issue 1 - Summer 2025
+
+**Moin dear Open Science friends of Oldenburg (and beyond),**
+
+Please feel free to share this newsletter and, as always, feel free to join our online biweekly meetings (Tuesdays 11-12 a.m. on uneven calendar weeks in the study group and A7-0-36: Next meeting on 1st of July) that are open to everyone. Previous newsletter issues can be retrieved from the OSIG website.
+
+---
+
+## Review of the last months
+
+- **The past few months have been buzzing with activity!** In May, we had the pleasure of hosting Sein Jeung for our Open Science Colloquium series. She gave a valuable talk on promoting good scientific practices through teaching, emphasizing that open science extends beyond research into the classroom. It was fantastic to learn from her experience in structuring and organizing an open science course. A heartfelt thank you to Sein for sharing her insights with us!
+
+- **Our members have also been busy writing grants** for the OSCARS project call. Julius and Melanie are involved in the EEGManySteps project proposal, a collaboration with TU Berlin and the University of Maastricht aiming to develop a platform for reproducible mobile EEG. At the same time, Karel is part of the OscarsBrain proposal, which seeks to advance open neuroscience with standardized, FAIR-compliant tools for MEG and EEG data. We're keeping our fingers crossed for all the proposals!
+
+- **On the conference front,** Julius, Micha, and Cassie attended the kick-off meeting for the METAREP Priority Program in Tutzing. This exciting program aims to tackle the replication crisis in behavioral, social, and cognitive sciences. We're proud that a project from our department, METEOR, is part of it. The project will address the challenge of variability in preprocessing pipelines for mobile EEG and fMRI. We wish the whole team a successful start!
+
+- **We also had a strong presence at the PuG 2025 conference.** Micha, Cassie, and Daniel ran a workshop on multiverse analysis in neuroimaging. In a symposium on methodological advances, Cassie and Daniel gave talks about advancing neuroimaging research with multiverse analysis and knowledge graph. Melanie presented posters on her work with the EEGManySteps project. And for the best news: huge congratulations to Cassie, who won the IGOR (The Interest Group Open and Reproducible Research) Award for Open and Reproducible Science at the conference. What a fantastic achievement!
+
+::: {.callout-tip}
+## Award Winner!
+Cassie with her well-deserved IGOR Award for Open and Reproducible Science from the PuG 2025 conference (Credit: Merlind Ammann)
+:::
+
+---
+
+## Open Science News
+
+- **Remember the Peer Community In (PCI)-Psychology platform** we mentioned in our last newsletter? It is now officially open for submissions! PCI offers a fantastic, community-driven path to free Open Access publication. Check out their [webpage](https://pci.org) to submit your work or to contribute as a reviewer and journal recommender.
+
+- **Hot off the press,** a group of Early Career Researchers and members of IGOR recently published a paper introducing ARIADNE: A Scientific Navigator to Find Your Way Through the Resource Labyrinth of Psychological Sciences. This incredible project, also available as a [GitHub book](https://github.com/), provides a wealth of resources for conducting transparent research, from project inception to dissemination. Definitely worth a look!
+
+---
+
+## Upcoming events
+
+Mark your calendars for a series of exciting events!
+
+- **June 24th and 25th:** Cassie is organizing a workshop at the Hanse-Wissenschaftskolleg on strategies to evaluate individually parameterized single-trial EEG, featuring a panel of experts. We can't wait to hear how it goes in the next newsletter, Cassie!
+
+- **Friday, June 27th:** Daniel will be part of a pre-conference virtual symposium for the METASCIENCE 2025 conference. Together with researchers from Ludwig-Maximilians-University of Munich, University of Cologne, and Chinese University of Hong Kong, he will discuss how meta-science and interdisciplinary research can empower Early Career Researchers. A very timely topic!
+
+- **July 10th:** Our Open Science Colloquium series continues! Kim Braun from the University Library and Information System will give an informative talk about Open Access publishing and financing options at the University of Oldenburg. This is a must-attend for anyone navigating the world of academic publishing.
+
+- **The first Oldenburg Open Science Conference 2025 is just around the corner!** The full program is live, and it looks incredible. [Check it here](oosc.qmd). To help us finalize planning, registration is necessary for all participants by July 11th through [this link](#). Don't miss out on a great day of science followed by a small drink reception to network! Sign up whether you're presenting a poster or just joining the discussions. We can't wait to see you there!
+
+---
+
+## AI for Open Science
+
+Starting with this issue, we're launching a new section on AI (Artificial Intelligence) in Open Science! Given the rapid developments in this area, we'll share updates on how AI can be used to foster open and reproducible research.
+
+For our first feature, we want to share a paper by Mohammad Hosseini and his team that nicely summarizes the challenges and opportunities of using AI in Open Science. They explain how Generative AI can broaden access to knowledge, improve research tools, and encourage public engagement. However, they also caution that the limitations of Generative AI could pose risks to research integrity and reproducibility. It's a thought-provoking read that sets the stage for many future discussions.
+
+::: {.callout-note}
+## Transparency Note
+A quick note on process: In the spirit of transparency (and integrating AI tools!), this newsletter was polished for readability with the assistance of Google's Gemini 2.5 Pro model. All content and final edits were, of course, reviewed and approved by Daniel before publishing.
+:::
+
+---
+
+## Get Involved
+
+This newsletter is sent to you by the Open Science interest group of the Psychology Department of Oldenburg ([https://uol.de/psychologie/open-science/osig](https://uol.de/psychologie/open-science/osig)). Would you like to get involved? Resources and projects are coordinated via a Stud.IP study group. Important information and announcements are also sent around to all members of this group. 
+
+If you are associated with the University of Oldenburg (student or staff) you can send a membership request and we will approve you as soon as possible.
+
+If you have further questions, please do not hesitate to contact our members via the study group or the mailing list [osi_psychology_task-force@lists.uni-oldenburg.de](mailto:osi_psychology_task-force@lists.uni-oldenburg.de) or add your name to [Openscience-Psychology mailing list](https://mailman.uni-oldenburg.de/mailman/listinfo/openscience-psychology).
+
+---
+
+*Openscience-psychology mailing list*  
+[Openscience-psychology@listserv.uni-oldenburg.de](mailto:Openscience-psychology@listserv.uni-oldenburg.de)  
+[https://mailman.uni-oldenburg.de/mailman/listinfo/openscience-psychology](https://mailman.uni-oldenburg.de/mailman/listinfo/openscience-psychology)

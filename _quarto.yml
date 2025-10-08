@@ -6,6 +6,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: newsletter.qmd
+        text: OSIG Newsletter
       - href: oosc.qmd
         text: 1st OOSC
   page-footer:
