@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIG Oldenburg Newsletter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Using a more professional and academic color scheme */
+        :root {
+            --primary-color: #003366; /* Dark Blue - UOldenburg Corporate Blue */
+            --secondary-color: #f0f4f8; /* Light gray-blue, for backgrounds */
+            --accent-color: #d1a300; /* Gold/Yellow - for highlights */
+            --text-color: #212529;
+            --light-gray: #ffffff;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 2.5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid var(--accent-color);
+        }
+        
+        #header-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.5;
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+        
+        .intro {
+            padding: 2rem;
+            background: var(--light-gray);
+            margin: 2.5rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .collapsible {
+            background: var(--light-gray);
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 1.25rem 1.5rem;
+            width: 100%;
+            border: 1px solid var(--border-color);
+            text-align: left;
+            outline: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .collapsible:hover {
+            background-color: #e9ecef;
+            border-color: #adb5bd;
+        }
+        
+        .collapsible::after {
+            content: '+'; 
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .collapsible.active::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        
+        .collapsible-title {
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 1rem;
+            stroke-width: 1.5;
+        }
+
+        .content {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background-color: var(--light-gray);
+            border-radius: 0 0 12px 12px;
+            border: 1px solid var(--border-color);
+            border-top: none;
+        }
+        
+        .content-inner {
+            padding: 1.5rem 0.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .content-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-list li {
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: 1.25rem;
+        }
+
+        .content-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-list li::before {
+            content: '■';
+            position: absolute;
+            left: 0;
+            top: -2px;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        /* --- NEW CSS FOR NESTED ORDERED LIST --- */
+        .content-list li ol {
+            list-style-type: decimal;
+            list-style-position: outside;
+            margin-top: 1rem;
+            padding-left: 2rem; /* Indents the numbered list */
+        }
+        .content-list li ol li {
+            padding-left: 0.5rem; /* Adds padding for the text after the number */
+            margin-bottom: 0.75rem;
+            position: static;
+        }
+        .content-list li ol li::before {
+            content: none; /* Removes the '■' from the nested list items */
+        }
+        /* --- END NEW CSS --- */
+
+
+        .content img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        
+        .content figcaption, .content .caption {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-top: 3rem;
+            background: #e9ecef;
+            font-size: 0.9rem;
+            color: #495057;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        a {
+            color: blue; 
+            font-weight: bold; /* <-- CHANGED FROM 500 TO BOLD */
+            text-decoration: underline; 
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+              .home-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .home-button:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <canvas id="header-canvas"></canvas>
+        <div class="container">
+            <h1>OSIG Oldenburg Newsletter</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="intro">
+            <p class="text-lg">Moin dear Open Science friends of Oldenburg (and beyond),</p>
+            <p>Please feel free to share this newsletter and, as always, feel free to join our online biweekly meetings (Tuesdays 10:30-11:30 a.m. on uneven calendar weeks in the study group and A7-0-36: Next meeting on 4th of November) that are open to everyone.</p>
+            <p>Previous newsletter issues can be retrieved from the <a href="https://osig-uol.github.io/" target="_blank">OSIG website</a>.</p>
+        </div>
+
+        <button type="button" class="collapsible">
+            <span class="collapsible-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="section-icon"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.19-9.51L1 10"/></svg>
+                <span>Review of the last months</span>
+            </span>
+        </button>
+        <div class="content">
+            <div class="content-inner">
+                <ul class="content-list">
+                    <li>It’s been a busy and exciting few months for the OSIG community! The highlight of the summer was undoubtedly the first Oldenburg Open Science Conference on July 18th! We were thrilled to welcome over 80 attendees from diverse fields and career stages (from students to professors) coming from Oldenburg, Bremen, Kiel, Trier, Munich, and even Nijmegen. The conference featured amazing talks and lively discussions not just on the why and how of open science, but also on its future – exploring how stakeholders such as universities, funders, and journals can improve its implementation. It was a fantastic day of science! If you missed it, don't worry – the conference materials are available <a href="https://osig-uol.github.io/oosc.html#st-oldenburg-open-science-conference-2025" target="_blank">here</a>. We also plan a second Open Science Conference, so stay tuned for updates!</li>
+                    <figure>
+                    <img src="OSIG_conf.png" alt="Open Science Conference"  onerror="this.onerror=null;this.src='https://placehold.co/400x533/e9ecef/495057?text=Image+Not+Found';">
+                    <figcaption>Some pictures during the Open Science conference (Credit: Cosku Inceler)</figcaption>
+                    </figure>
+                    <li>We also had a strong presence at this year’s DPPD (Differenzielle Psychologie, Persönlichkeitspsychologie und Psychologische Diagnostik) conference! Cassie organized and moderated a well-attended panel discussion on the role of multiverse analysis in achieving scientific rigour. The panel, including Prof. Dr. Jan Wacker (Hamburg), Prof. Dr. Johannes Rodrigues (Würzburg), and Dr. Julia Rohrer (Leipzig) alongside our own Dr. Cassie Ann Short, held a lively and critical exchange on whether multiverse analysis should be a standard practice. The session was a huge success, drawing an engaged audience and receiving highly positive feedback. On top of that, Cassie alsogave a talk in a symposium on machine learning in meta-science, showcasing how modern tools can support open research. Way to go, Cassie!</li>
+                    <li>Cassie also led an important workshop at the Hanse-Wissenschaftskolleg (HWK) on “Enhancing replicability in EEG individual differences research through individually parameterised single-trial EEG – developing a comprehensive signal quality evaluation strategy.” The workshop was a fantastic example of collaboration, bringing together researchers from our own department – including Andrea Hildebrandt, Stefan Debener, Melanie Klapprott, and Karel López Vilaret – with external experts from Germany, Denmark, and the USA. Together, they discussed strategies to improve methodological transparency, reliability, and validity in single-trial EEG research. The group now plans to collaborate on an open framework for reporting, and we look forward to seeing the results of this exciting initiative!</li>
+                    <li>October saw an important panel discussion at the IGOR Hackathon (organized by one of our OSIG members, Julius) titled “Have We Solved the Replication Crisis?”. The October 10th session featured a stellar lineup: Andrea Hildebrandt, Britta Westner, Sein Jeung, and Dorothy Bishop, with Gordon Feld moderating. The panel acknowledged significant progress from reforms such as preregistration and registered reports but emphasized that core challenges remain. Key concerns included measurement reliability, software infrastructure vulnerability, and academic incentives that still privilege novelty over rigour. A recurring theme was the need to treat replication as a routine, structurally supported part of science, not just a temporary 'crisis'.</li>
+                    <li>Our members have also been busy sharing their expertise! Earlier this month, Micha led an interactive session on Open Science methods for PhD students at the <a href="https://kd2school.info/about.html" target="_blank">KD²School in Bremen</a>. The workshop explored the motivations behind Open Science, from the replication crisis to building trust. Participants discussed how practices like FAIR data, reproducible code, and preregistration make science more robust and collaborative. A key takeaway was that Open Science is a journey, not a checklist. As Micha emphasized, taking any step – such as sharing code or preregistering hypotheses – helps build a stronger culture of openness.</li>
+                </ul>
+            </div>
+        </div>
+
+        <button type="button" class="collapsible">
+            <span class="collapsible-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="section-icon"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4"/><path d="M16 2v20"/><path d="M10 2v2"/><path d="M10 7h4"/><path d="M10 11h4"/><path d="M10 15h4"/></svg>
+                <span>Open Science News</span>
+            </span>
+        </button>
+        <div class="content">
+             <div class="content-inner">
+                 <ul class="content-list">
+                    <li>We are incredibly excited to announce that OSIG has been accepted as a member of the international ReproducibiliTEA network! ReproducibiliTEA is a global grassroots initiative that supports local journal clubs and discussion groups dedicated to open and reproducible research. Joining this network connects OSIG with a vibrant international community, providing fantastic opportunities to exchange ideas, share best practices, and collaborate on open science initiatives. This affiliation strengthens our department’s commitment to transparency and research integrity while increasing its visibility within the global open science community. We can't wait to get started (see our upcoming events)!</li>
+                    <li>The OSIG is delighted to announce the introduction of the OSIG Open Science Award for Practical Projects! This new award will be presented for the first time at the April 2026 Practical Project Symposium. Students can self-nominate their projects until the end of March 2026. The award recognises exceptional integration of open science principles into students’ research practice. OSIG members will evaluate submissions based on open science implementation where relevant, as well as the student’s reflection on the relevance of transparency and reproducibility to their work. We're very much looking forward to seeing the great open science work being done in the practical projects!</li>
+                    <li>For years, our community has discussed the need to reform research assessment. Traditional metrics such as journal impact factors and h-indexes often fail to capture the full scope of scientific contributions, overlooking open science practices such as sharing data, code, and preprints. This is why the Coalition for Reforming Research Assessment (CoARA) was formed – to drive a systemic shift towards a more holistic, responsible, and qualitative evaluation culture. We're excited to see this movement gaining serious momentum in Germany! The German National Chapter of CoARA held its autumn meeting on October 9th–10th, 2025, with 42 German member organizations participating both in person in Berlin and online. The first day featured a public session with updates from the international coalition, including the fantastic news that four German projects received funding through CoARA’s cascade funding program. Attendees also heard updates from working groups on "Peer Review" and "Towards Transformations." The meeting then focused on practical implementation, with members sharing best practices on developing new metrics, raising awareness, and guiding policy. The second day was dedicated to lively discussions on research excellence and how CoARA's principles can support it. The chapter is expected to convene again online in spring 2026, with a special webinar planned to help members develop and implement their CoARA <a href="https://www.coara.org/action-plan/" target="_blank">Action Plans</a>. It's inspiring to see this important work moving forward!</li>
+                    
+                    <li>For those interested in open-science-related events, here are a few to note:
+                        <ol>
+                            <li>"Unlocking Incentives for Future Research – Empowering Early Career Researchers" is an online workshop on November 21, 2025, aimed at ECRs to discuss incentives for a more transparent research environment. <a href="https://www.allianzschwerpunkt-digitalitaet.de/2025/09/25/online-event-unlocking-incentives-for-future-research/" target="_blank">Learn more here</a>.</li>
+                            <li>The RDA (Research Data Alliance) Deutschland Tagung 2026 (RDA Germany Conference 2026), the annual meeting for the German Research Data Alliance (RDA) community, will be held in Potsdam from February 24-25, 2026. <a href="https://indico.desy.de/event/50156/" target="_blank">Details are here</a>.</li>
+                            <li>The FOR (Future of Open Research) 2026 Conference will take place in Munich from May 4-6, 2026, with the theme "The Future of Open Research: Reliable, Responsible, Equitable." <a href="https://opensciencestudies.eu/for-2026-conference/" target="_blank">More information is available here</a>.</li>
+                        </ol>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+
+        <button type="button" class="collapsible">
+            <span class="collapsible-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="section-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Upcoming events</span>
+            </span>
+        </button>
+        <div class="content">
+            <div class="content-inner">
+                <ul class="content-list">
+                    <li>Mark your calendars! Are you working with MEG data? Join Karel López Vilaret for a live online workshop on MEGqc, a new open-source pipeline for fast, standardized, and fully reproducible quality assessment, at <a href="https://cuttingeeg.org/practicalmeeg2025/" target="_blank">PracticalMEEG 2025</a>. This hands-on session will provide a full walkthrough, from raw BIDS data to shareable reports, and show how to quantify key noise sources. The session is scheduled for Wednesday, October 30th, from 2:00 pm to 5:00 pm CET. In case you will miss the workshop but are interested in the topic, Karel will be happy to provide further information – just contact him!</li>
+                    <li>The OSIG will host two open sessions within the Practical Project seminars this semester, and all students are warmly invited to attend if this fits within the schedule of their Practical Project seminar tutors. On 17th November, Cassie and Melanie will lead a session on Preregistration. On 1st December, Micha will lead a session on Git. Both sessions will take place in Room 031 from 12:30–2:00 pm.</li>
+                    <li>Related to our news on joining the ReproducibiliTEA network, our first OSIG ReproducibiliTEA Journal Club will be held on Tuesday, 2nd December, from 10:30 - 11:30 in room 036, led by Sumbul Jafri. These sessions are an open space to discuss papers on reproducible research. All staff and students are invited! Stay tuned for the official invitation and discussion paper.</li>
+                    <li>On 15th January 2026 from 16:15 - 17:45, Cassie and Micha will lead an interactive Introduction to Open Science in the Department Colloquium, designed to provide an accessible overview of key principles and practices. The session is open to all staff and students in the department, and we are pleased to extend the invitation to colleagues and students from the Medical Department and the Machine Learning and Data Science course. We warmly encourage everyone interested in learning how open science can enhance transparency, collaboration, and research quality to attend.</li>
+                    <li>Have you ever wondered whether there are large, open MRI datasets available for your research? We have good news! Amir, Micha, Karel, and Sumbul are organizing an interactive workshop on open neuroimaging datasets, including how to access them, what kinds of assessments and measures they include, and how to get started with basic analyses. The workshop will also feature a hands-on session where participants can explore and analyze data themselves. The event is planned for early next year, so stay tuned for more details!</li>
+                </ul>
+            </div>
+        </div>
+
+        <button type="button" class="collapsible">
+            <span class="collapsible-title">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="section-icon"><path d="M12 2a2.83 2.83 0 0 0-2 5 4.83 4.83 0 0 1-2.6 4.41 2.83 2.83 0 0 0-1.4 5.2V18a2 2 0 0 0 2 2h1.4a2.83 2.83 0 0 0 5.2 0H18a2 2 0 0 0 2-2v-.39a2.83 2.83 0 0 0-1.4-5.2A4.83 4.83 0 0 1 14 7a2.83 2.83 0 0 0-2-5Z"/><path d="M8 18v2"/><path d="M16 18v2"/><circle cx="12" cy="12" r="4"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/><path d="m4.93 19.07 2.83-2.83"/><path d="m16.24 7.76-2.83-2.83"/></svg>
+                <span>AI for Open Science</span>
+            </span>
+        </button>
+        <div class="content">
+             <div class="content-inner">
+                <ul class="content-list">
+                    <li>For this issue’s section on AI in Open Science, we’re looking at an exciting evolution of a core concept: the FAIR principles. Most of us are familiar with the original FAIR principles (Findable, Accessible, Interoperable, and Reusable), which were <a href="https://www.nature.com/articles/sdata201618" target="_blank">published in Scientific Data in 2016</a> and set a new standard for data management. But as AI becomes more central to our work, a new question has emerged: are those principles enough to ensure our data is ready for modern machine learning?</li>
+                    <li>This is where FAIR² (or "FAIR-square") comes in. A new initiative, which you can <a href="https://fair2.ai/about" target="_blank">read about at https://fair2.ai/about</a>, proposes a crucial extension: making data AI-Ready, Responsible AI aligned, and Context-Rich. FAIR² builds directly on the original principles but adds new layers essential for AI. It emphasizes the need for AI-Ready Design (ensuring datasets are interoperable with AI tools), Responsible AI Alignment (transparently documenting biases, limitations, and ethical considerations), and Context-Rich Metadata (detailing how datasets were created and validated). The goal is to ensure that datasets – and the AI models trained on them – are not just usable but also trusted, reproducible, and ethically aligned. It's a critical discussion on how to adapt our open science standards for a new wave of computational research!</li>
+                    <li>A quick note on process: In the spirit of transparency (and integrating AI tools!), this newsletter was polished for readability with the assistance of Google's Gemini 2.5 Pro model. All content and final edits were, of course, reviewed and approved by Daniel before publishing.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>This newsletter is sent to you by the Open Science interest group of the Psychology Department of Oldenburg (<a href="https://uol.de/psychologie/open-science/osig" target="_blank">https://uol.de/psychologie/open-science/osig</a>).</p>
+            <p>Would you like to get involved? Resources and projects are coordinated via a Stud.IP study group. Important information and announcements are also sent around to all members of this group.</p>
+            <p>If you are associated with the University of Oldenburg (student or staff) you can send a membership request <a href="https://elearning.uni-oldenburg.de/dispatch.php/course/studygroup/details/62793789f65c00ca9acf3dfbed349662?again=yes" target="_blank">here</a> and we will approve you as soon as possible.</p>
+            <p>If you have further questions, please do not hesitate to contact our members via the study group or the mailing list <a href="mailto:osi_psychology_task-force@lists.uni-oldenburg.de">osi_psychology_task-force@lists.uni-oldenburg.de</a> or add your name to <a href="https://mailman.uni-oldenburg.de/mailman/listinfo/openscience-psychology" target="_blank">Openscience-Psychology mailing list</a>.</p>
+        </div>
+    </footer>
+
+    <a href="../index.html" class="home-button">🏠 Home</a>
+
+
+    <script>
+        // --- INTERACTIVE COLLAPSIBLE SECTIONS ---
+        const collapsibles = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < collapsibles.length; i++) {
+            collapsibles[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+        // --- CATCHY CANVAS HEADER ANIMATION ---
+        const canvas = document.getElementById('header-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const numParticles = 100;
+
+        function setCanvasSize() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 0.6 - 0.3;
+                this.speedY = Math.random() * 0.6 - 0.3;
+                this.color = 'rgba(255, 255, 255, 0.7)';
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.size > 0.2) this.size -= 0.01;
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < numParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function handleParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+                 if (particles[i].size <= 0.2) {
+                    particles[i] = new Particle();
+                }
+            }
+        }
+        
+        function connectParticles() {
+            let opacityValue = 1;
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a; b < particles.length; b++) {
+                    let distance = Math.sqrt(((particles[a].x - particles[b].x) ** 2) + ((particles[a].y - particles[b].y) ** 2));
+                    if (distance < 100) {
+                        opacityValue = 1 - (distance/100);
+                        ctx.strokeStyle = `rgba(209, 163, 0, ${opacityValue})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            handleParticles();
+            connectParticles();
+            requestAnimationFrame(animate);
+        }
+
+        // Debounce resize handler
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                setCanvasSize();
+                initParticles();
+            }, 100);
+        });
+        
+        // Initial setup
+        setCanvasSize();
+        initParticles();
+        animate();
+    </script>
+
+</body>
+</html>
