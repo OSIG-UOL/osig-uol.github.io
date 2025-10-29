@@ -1,13 +1,21 @@
 project:
   type: website
+  resources:
+    - "Newsletter/*.png"
+    - "Newsletter/*.jpg"
+    - "Newsletter/*.html"
 
 website:
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: newsletter.qmd
-        text: OSIG Newsletter
+      - text: OSIG Newsletter
+        menu:
+          - text: "Newsletter 11th Issue: June 2025"
+            href: Newsletter/NL_June.html
+          - text: "Previous Newsletters"
+            href: https://uol.de/psychologie/open-science/osig
       - href: oosc.qmd
         text: 1st OOSC
   page-footer:
