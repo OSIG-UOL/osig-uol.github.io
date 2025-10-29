@@ -14,6 +14,8 @@ website:
         menu:
           - text: "Newsletter 11th Issue: June 2025"
             href: Newsletter/NL_June.html
+          - text: "Newsletter 12th Issue: October 2025"
+            href: Newsletter/NL_October.html
           - text: "Previous Newsletters"
             href: https://uol.de/psychologie/open-science/osig
       - href: oosc.qmd
