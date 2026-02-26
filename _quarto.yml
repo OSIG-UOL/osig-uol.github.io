@@ -4,6 +4,7 @@ project:
     - "Newsletter/*.png"
     - "Newsletter/*.jpg"
     - "Newsletter/*.html"
+    - "Newsletter/*.jpeg"
 
 website:
   navbar:
@@ -16,6 +17,8 @@ website:
             href: Newsletter/NL_June.html
           - text: "Newsletter 12th Issue: October 2025"
             href: Newsletter/NL_October.html
+          - text: "Newsletter 13th Issue: February 2026"
+            href: Newsletter/NL_February_2026.html
           - text: "Previous Newsletters"
             href: https://uol.de/psychologie/open-science/osig
       - href: oosc.qmd
