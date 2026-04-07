@@ -23,6 +23,8 @@ website:
             href: https://uol.de/psychologie/open-science/osig
       - href: oosc.qmd
         text: 1st OOSC
+      - href: open_science_quests.qmd
+        text: Open Science Quests
   page-footer:
     left: |
       © 2025 Open Science Interest Group (OSIG)
