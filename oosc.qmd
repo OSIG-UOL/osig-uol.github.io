@@ -34,7 +34,47 @@ The 1st Oldenburg Open Science Conference aims to bring together students and re
 
 
 ## Organizers
-The conference is organized by the Open Science Interest Group of the Carl von Ossietzky Universität Oldenburg. You can find more information about the group on our website.
+The conference is organized by the Open Science Interest Group (OSIG) of the Carl von Ossietzky Universität Oldenburg.
+
+## Photo gallery
+
+::: {layout-ncol=3}
+![](pics/oosc/DSC09049.jpg){group="gallery"}
+
+![](pics/oosc/DSC08685.jpg){group="gallery"}
+
+![](pics/oosc/DSC08778.jpg){group="gallery"}
+
+![](pics/oosc/DSC08822.jpg){group="gallery"}
+
+![](pics/oosc/DSC08706.jpg){group="gallery"}
+
+![](pics/oosc/DSC08965.jpg){group="gallery"}
+
+![](pics/oosc/DSC08933.jpg){group="gallery"}
+
+![](pics/oosc/DSC08844.jpg){group="gallery"}
+
+![](pics/oosc/DSC08876.jpg){group="gallery"}
+
+![](pics/oosc/DSC08997.jpg){group="gallery"}
+
+![](pics/oosc/DSC09027.jpg){group="gallery"}
+
+![](pics/oosc/DSC09046.jpg){group="gallery"}
+
+![](pics/oosc/DSC09060.jpg){group="gallery"}
+
+![](pics/oosc/DSC09064.jpg){group="gallery"}
+
+![](pics/oosc/DSC09070.jpg){group="gallery"}
+
+![](pics/oosc/DSC09073.jpg){group="gallery"}
+
+![](pics/oosc/DSC09078.jpg){group="gallery"}
+
+![](pics/oosc/DSC09079.jpg){group="gallery"}
+:::
 
 ## Sponsors
 ![](pics/sponsors.png)
