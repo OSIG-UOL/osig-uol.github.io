@@ -19,6 +19,8 @@ website:
             href: Newsletter/NL_October.html
           - text: "Newsletter 13th Issue: February 2026"
             href: Newsletter/NL_February_2026.html
+          - text: "Newsletter 14th Issue: June 2026"
+            href: Newsletter/NL_June_2026.html
           - text: "Previous Newsletters"
             href: https://uol.de/psychologie/open-science/osig
       - href: oosc.qmd
