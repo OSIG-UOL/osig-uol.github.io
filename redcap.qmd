@@ -1,0 +1,29 @@
+
+---
+format:
+  html:
+    linkcolor: rgb(0,62,107)
+    mainfont: Nunito Sans
+---
+
+![](pics/redcap_logo.png)
+
+# REDCap
+Open science is built on a foundation of transparency and replicability. One way that we can maintain this in data collection is through standardized data collection tools such as REDCap. REDCap is an online database where researchers can upload their data or have participants complete surveys that are immediately transferred to the database. It is user friendly and reduces the human errors from data entry within an excel sheet!
+We are able to increase the replicability of data entry in REDCap through the use of coding. There is a Python Package being developed called [‘rcol’](https://juliuswelzel.github.io/rcol/) that is able to install all instruments a project may need directly into REDCap. This package has many current instruments being used within the RTG 2783 Neuromodulation at the Universität Oldenburg. By use of this package, you are able to upload these instruments directly into your REDCap project. This standardizes the coding scheme, the questions, and the excel exports.
+
+
+## Redcap consultation hour
+The Neurocognitive Psychology Department will be hosting biweekly meetings for implementation and questions are REDCap. During these meetings, you can discuss things like: how REDCap may be implemented for your project, how to modify the instruments to suit your specific project needs, or anything else you may be curious about! These meetings will be held by Hayden Mayer and Evrim Evirgen. The meetings will be:
+
+::: {.callout-note}
+- Room
+- Day
+- Time
+:::
+
+## Curious to learn more?
+Here are some helpful resources to establish a solid foundation in both REDCap and the python package:
+
+- REDCap User Manual for Universität Oldenburg 
+- rcol - [Python Package Instruction Page](https://juliuswelzel.github.io/rcol/)

@@ -23,10 +23,12 @@ website:
             href: Newsletter/NL_June_2026.html
           - text: "Previous Newsletters"
             href: https://uol.de/psychologie/open-science/osig
-      - href: oosc.qmd
-        text: 1st OOSC
       - href: open_science_quests.qmd
         text: Open Science Quests
+      - href: redcap.qmd
+        text: RedCap
+      - href: oosc.qmd
+        text: 1st OOSC
   page-footer:
     left: |
       © 2025 Open Science Interest Group (OSIG)
