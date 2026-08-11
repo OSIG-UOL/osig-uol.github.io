@@ -30,7 +30,7 @@ format:
 </style>
 ```
 
-![](pics/redcap_logo.png){width="260px" fig-alt="REDCap logo"}
+![](pics/redcap_logo.png){width="360px" fig-align="center" fig-alt="REDCap logo"}
 
 # REDCap
 
