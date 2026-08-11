@@ -77,6 +77,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -155,6 +158,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#redcap" id="toc-redcap" class="nav-link active" data-scroll-target="#redcap">REDCap</a>
   <ul class="collapse">
+  <li><a href="#what-redcap-gives-you" id="toc-what-redcap-gives-you" class="nav-link" data-scroll-target="#what-redcap-gives-you">What REDCap gives you</a></li>
+  <li><a href="#research-data-workflow-from-collection-to-open-science" id="toc-research-data-workflow-from-collection-to-open-science" class="nav-link" data-scroll-target="#research-data-workflow-from-collection-to-open-science">Research Data Workflow: From Collection to Open Science</a></li>
   <li><a href="#redcap-consultation-hour" id="toc-redcap-consultation-hour" class="nav-link" data-scroll-target="#redcap-consultation-hour">Redcap consultation hour</a></li>
   <li><a href="#curious-to-learn-more" id="toc-curious-to-learn-more" class="nav-link" data-scroll-target="#curious-to-learn-more">Curious to learn more?</a></li>
   </ul></li>
@@ -167,13 +172,90 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><a href="pics/redcap_logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="pics/redcap_logo.png" class="img-fluid"></a></p>
+<style>
+.rc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.rc-card {
+  background: #fff;
+  border: 1px solid #e3e8ee;
+  border-top: 4px solid rgb(0, 78, 159);
+  border-radius: 0.6rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+  transition: transform .2s, box-shadow .2s;
+}
+.rc-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); }
+.rc-card h4 { margin-top: .2rem; color: rgb(0, 62, 107); }
+.rc-card p  { margin-bottom: 0; font-size: .97rem; }
+@media (max-width: 768px) { .rc-cards { grid-template-columns: 1fr; } }
+</style>
+<p><a href="pics/redcap_logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="pics/redcap_logo.png" class="img-fluid" alt="REDCap logo" width="260"></a></p>
 <section id="redcap" class="level1">
 <h1>REDCap</h1>
-<p>Open science is built on a foundation of transparency and replicability. One way that we can maintain this in data collection is through standardized data collection tools such as REDCap. REDCap is an online database where researchers can upload their data or have participants complete surveys that are immediately transferred to the database. It is user friendly and reduces the human errors from data entry within an excel sheet! We are able to increase the replicability of data entry in REDCap through the use of coding. There is a Python Package being developed called <a href="https://juliuswelzel.github.io/rcol/">‘rcol’</a> that is able to install all instruments a project may need directly into REDCap. This package has many current instruments being used within the RTG 2783 Neuromodulation at the Universität Oldenburg. By use of this package, you are able to upload these instruments directly into your REDCap project. This standardizes the coding scheme, the questions, and the excel exports.</p>
+<p>Open science is built on a foundation of transparency and replicability. One way that we can maintain this in data collection is through standardized data collection tools such as REDCap. REDCap is an online database where researchers can upload their data or have participants complete surveys that are immediately transferred to the database. It is user friendly and reduces the human errors from data entry within an excel sheet!</p>
+<p>We are able to increase the replicability of data entry in REDCap through the use of coding. There is a Python Package being developed called <a href="https://juliuswelzel.github.io/rcol/">‘rcol’</a> that is able to install all instruments a project may need directly into REDCap. This package has many current instruments being used within the RTG 2783 Neuromodulation at the Universität Oldenburg. By use of this package, you are able to upload these instruments directly into your REDCap project. This standardizes the coding scheme, the questions, and the excel exports.</p>
+<section id="what-redcap-gives-you" class="level2">
+<h2 class="anchored" data-anchor-id="what-redcap-gives-you">What REDCap gives you</h2>
+<div class="rc-cards">
+  <div class="rc-card">
+    <h4 class="anchored">Standardised instruments</h4>
+    <p>Pull validated questionnaires (FAL, EHI, BDI-II, MoCA…) from <code>rcol</code> so every project uses the same schema.</p>
+  </div>
+  <div class="rc-card">
+    <h4 class="anchored">Fewer entry errors</h4>
+    <p>Data goes straight into the database with validation, instead of being retyped into a spreadsheet.</p>
+  </div>
+  <div class="rc-card">
+    <h4 class="anchored">Reproducible setup</h4>
+    <p>Your project is defined in a short Python script you can version and re-run.</p>
+  </div>
+  <div class="rc-card">
+    <h4 class="anchored">Analysis-ready exports</h4>
+    <p>Consistent CSV / API exports drop cleanly into R, SPSS, or Python — and onward toward BIDS.</p>
+  </div>
+</div>
+</section>
+<section id="research-data-workflow-from-collection-to-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="research-data-workflow-from-collection-to-open-science">Research Data Workflow: From Collection to Open Science</h2>
+<p>Whether data arrives on paper, on a tablet in the lab, or through an online survey, it lands in one standardized project and exports the same way every time.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A["Paper forms"] --&gt; D
+    B["Tablet / QR survey"] --&gt; D
+    C["Online survey"] --&gt; D
+    G["rcol templates"] -.-&gt;|install instruments| D
+    D["&lt;b&gt;REDCap project&lt;/b&gt;&lt;br/&gt;standardised instruments"] --&gt; E["Clean export&lt;br/&gt;CSV · API"]
+    E --&gt; F["&lt;b&gt;BIDS dataset&lt;/b&gt;&lt;br/&gt;+ EEG / behaviour"]
+    classDef src fill:#e6f2fb,stroke:#004e9f,color:#003e6b;
+    classDef core fill:#004e9f,stroke:#003e6b,color:#fff;
+    classDef out fill:#e5f5ef,stroke:#00a879,color:#12503b;
+    class A,B,C src;
+    class D core;
+    class E,F out;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
 <section id="redcap-consultation-hour" class="level2">
 <h2 class="anchored" data-anchor-id="redcap-consultation-hour">Redcap consultation hour</h2>
-<p>The Neurocognitive Psychology Department will be hosting biweekly meetings for implementation and questions are REDCap. During these meetings, you can discuss things like: how REDCap may be implemented for your project, how to modify the instruments to suit your specific project needs, or anything else you may be curious about! These meetings will be held by Hayden Mayer and Evrim Evirgen. The meetings will be:</p>
+<p>The Neurocognitive Psychology Department will be hosting biweekly meetings for implementation and questions around REDCap. During these meetings, you can discuss things like:</p>
+<ul>
+<li>how REDCap may be implemented for your project,</li>
+<li>how to modify the instruments to suit your specific project needs, or</li>
+<li>anything else you may be curious about!</li>
+</ul>
+<p>These meetings will be held by Hayden Mayer and Evrim Evirgen. The meetings will be:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -185,9 +267,9 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Room</li>
-<li>Day</li>
-<li>Time</li>
+<li><strong>Room</strong> — <em>to be confirmed</em></li>
+<li><strong>Day</strong> — <em>to be confirmed</em></li>
+<li><strong>Time</strong> — <em>to be confirmed</em></li>
 </ul>
 </div>
 </div>
@@ -195,10 +277,23 @@ Note
 <section id="curious-to-learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="curious-to-learn-more">Curious to learn more?</h2>
 <p>Here are some helpful resources to establish a solid foundation in both REDCap and the python package:</p>
-<ul>
-<li>REDCap User Manual for Universität Oldenburg</li>
-<li>rcol - <a href="https://juliuswelzel.github.io/rcol/">Python Package Instruction Page</a></li>
-</ul>
+<div class="rc-cards">
+  <div class="rc-card">
+    <h4 class="anchored">rcol — Python package</h4>
+    <p>Instrument templates and a full setup walkthrough (account, API key, upload, surveys).</p>
+    <p><a href="https://juliuswelzel.github.io/rcol/">Instruction page</a></p>
+  </div>
+  <div class="rc-card">
+    <h4 class="anchored">REDCap manual (UOL)</h4>
+    <p>Getting started with REDCap at the University of Oldenburg.</p>
+    <p><a href="https://uol.de/f/6/Forschungsdatenmanagement/REDCap-Erste_Schritte.pdf">REDCap – Erste Schritte (PDF)</a></p>
+  </div>
+  <div class="rc-card">
+    <h4 class="anchored">REDCap to BIDS</h4>
+    <p>Turn REDCap exports into a BIDS <code>participants.tsv</code> / <code>.json</code> dataset.</p>
+    <p><a href="https://github.com/JuliusWelzel/redcap2bids">redcap2bids on GitHub</a></p>
+  </div>
+</div>
 
 
 </section>

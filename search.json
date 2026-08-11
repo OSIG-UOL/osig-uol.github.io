@@ -112,18 +112,32 @@
     "text": "This newsletter is sent to you by the Open Science interest group of the Psychology Department of Oldenburg (https://uol.de/psychologie/open-science/osig). Would you like to get involved? Resources and projects are coordinated via a Stud.IP study group. Important information and announcements are also sent around to all members of this group.\nIf you are associated with the University of Oldenburg (student or staff) you can send a membership request and we will approve you as soon as possible.\nIf you have further questions, please do not hesitate to contact our members via the study group or the mailing list osi_psychology_task-force@lists.uni-oldenburg.de or add your name to Openscience-Psychology mailing list.\n\nOpenscience-psychology mailing list\nOpenscience-psychology@listserv.uni-oldenburg.de\nhttps://mailman.uni-oldenburg.de/mailman/listinfo/openscience-psychology"
   },
   {
+    "objectID": "redcap.html#what-redcap-gives-you",
+    "href": "redcap.html#what-redcap-gives-you",
+    "title": "REDCap",
+    "section": "What REDCap gives you",
+    "text": "What REDCap gives you\n\n  \n    Standardised instruments\n    Pull validated questionnaires (FAL, EHI, BDI-II, MoCA…) from rcol so every project uses the same schema.\n  \n  \n    Fewer entry errors\n    Data goes straight into the database with validation, instead of being retyped into a spreadsheet.\n  \n  \n    Reproducible setup\n    Your project is defined in a short Python script you can version and re-run.\n  \n  \n    Analysis-ready exports\n    Consistent CSV / API exports drop cleanly into R, SPSS, or Python — and onward toward BIDS."
+  },
+  {
+    "objectID": "redcap.html#research-data-workflow-from-collection-to-open-science",
+    "href": "redcap.html#research-data-workflow-from-collection-to-open-science",
+    "title": "REDCap",
+    "section": "Research Data Workflow: From Collection to Open Science",
+    "text": "Research Data Workflow: From Collection to Open Science\nWhether data arrives on paper, on a tablet in the lab, or through an online survey, it lands in one standardized project and exports the same way every time.\n\n\n\n\n\nflowchart LR\n    A[\"Paper forms\"] --&gt; D\n    B[\"Tablet / QR survey\"] --&gt; D\n    C[\"Online survey\"] --&gt; D\n    G[\"rcol templates\"] -.-&gt;|install instruments| D\n    D[\"&lt;b&gt;REDCap project&lt;/b&gt;&lt;br/&gt;standardised instruments\"] --&gt; E[\"Clean export&lt;br/&gt;CSV · API\"]\n    E --&gt; F[\"&lt;b&gt;BIDS dataset&lt;/b&gt;&lt;br/&gt;+ EEG / behaviour\"]\n    classDef src fill:#e6f2fb,stroke:#004e9f,color:#003e6b;\n    classDef core fill:#004e9f,stroke:#003e6b,color:#fff;\n    classDef out fill:#e5f5ef,stroke:#00a879,color:#12503b;\n    class A,B,C src;\n    class D core;\n    class E,F out;"
+  },
+  {
     "objectID": "redcap.html#redcap-consultation-hour",
     "href": "redcap.html#redcap-consultation-hour",
     "title": "REDCap",
     "section": "Redcap consultation hour",
-    "text": "Redcap consultation hour\nThe Neurocognitive Psychology Department will be hosting biweekly meetings for implementation and questions are REDCap. During these meetings, you can discuss things like: how REDCap may be implemented for your project, how to modify the instruments to suit your specific project needs, or anything else you may be curious about! These meetings will be held by Hayden Mayer and Evrim Evirgen. The meetings will be:\n\n\n\n\n\n\nNote\n\n\n\n\nRoom\nDay\nTime"
+    "text": "Redcap consultation hour\nThe Neurocognitive Psychology Department will be hosting biweekly meetings for implementation and questions around REDCap. During these meetings, you can discuss things like:\n\nhow REDCap may be implemented for your project,\nhow to modify the instruments to suit your specific project needs, or\nanything else you may be curious about!\n\nThese meetings will be held by Hayden Mayer and Evrim Evirgen. The meetings will be:\n\n\n\n\n\n\nNote\n\n\n\n\nRoom — to be confirmed\nDay — to be confirmed\nTime — to be confirmed"
   },
   {
     "objectID": "redcap.html#curious-to-learn-more",
     "href": "redcap.html#curious-to-learn-more",
     "title": "REDCap",
     "section": "Curious to learn more?",
-    "text": "Curious to learn more?\nHere are some helpful resources to establish a solid foundation in both REDCap and the python package:\n\nREDCap User Manual for Universität Oldenburg\nrcol - Python Package Instruction Page"
+    "text": "Curious to learn more?\nHere are some helpful resources to establish a solid foundation in both REDCap and the python package:\n\n  \n    rcol — Python package\n    Instrument templates and a full setup walkthrough (account, API key, upload, surveys).\n    Instruction page\n  \n  \n    REDCap manual (UOL)\n    Getting started with REDCap at the University of Oldenburg.\n    REDCap – Erste Schritte (PDF)\n  \n  \n    REDCap to BIDS\n    Turn REDCap exports into a BIDS participants.tsv / .json dataset.\n    redcap2bids on GitHub"
   },
   {
     "objectID": "oosc.html#about-the-conference",
