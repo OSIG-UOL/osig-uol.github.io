@@ -137,7 +137,7 @@
     "href": "redcap.html#curious-to-learn-more",
     "title": "REDCap",
     "section": "Curious to learn more?",
-    "text": "Curious to learn more?\nHere are some helpful resources to establish a solid foundation in both REDCap and the python package:\n\n  \n    rcol — Python package\n    Instrument templates and a full setup walkthrough (account, API key, upload, surveys).\n    Instruction page\n  \n  \n    REDCap manual (UOL)\n    Getting started with REDCap at the University of Oldenburg.\n    REDCap – Erste Schritte (PDF)\n  \n  \n    REDCap to BIDS\n    Turn REDCap exports into a BIDS participants.tsv / .json dataset.\n    redcap2bids on GitHub"
+    "text": "Curious to learn more?\nHere are some helpful resources to establish a solid foundation in both REDCap and the python package:\n\n  \n    rcol — Python package\n    Instrument templates and a full setup walkthrough (account, API key, upload, surveys).\n    Instruction page\n  \n  \n    REDCap manual (UOL)\n    Getting started with REDCap at the University of Oldenburg.\n    REDCap User Manual (PDF)\n  \n  \n    REDCap to BIDS\n    Turn REDCap exports into a BIDS participants.tsv / .json dataset.\n    redcap2bids on GitHub"
   },
   {
     "objectID": "oosc.html#about-the-conference",
