@@ -2,6 +2,7 @@
 ---
 format:
   html:
+  anchor-sections: false
     linkcolor: rgb(0,62,107)
     mainfont: Nunito Sans
 ---
@@ -93,9 +94,9 @@ The Neurocognitive Psychology Department will be hosting biweekly meetings for i
 These meetings will be held by Hayden Mayer and Evrim Evirgen. The meetings will be:
 
 ::: {.callout-note}
-- **Room** — *A07 0-042*
-- **Day** — *Biweekly starting on 21.10.2026*
-- **Time** — *14:00-16:00*
+- **Room** - *A07 0-042*
+- **Day** - *Biweekly starting on 21.10.2026*
+- **Time** - *14:00-16:00*
 :::
 
 ## Curious to learn more?
@@ -104,20 +105,20 @@ Here are some helpful resources to establish a solid foundation in both REDCap a
 
 ```{=html}
 <div class="rc-cards">
-  <div class="rc-card">
-    <h4>rcol — Python package</h4>
-    <p>Instrument templates and a full setup walkthrough (account, API key, upload, surveys).</p>
-    <p><a href="https://juliuswelzel.github.io/rcol/">Instruction page</a></p>
-  </div>
-  <div class="rc-card">
-    <h4>REDCap manual (UOL)</h4>
-    <p>Getting started with REDCap at the University of Oldenburg.</p>
-    <p><a href="https://cloud.uol.de/s/ExeW2cXrw5M2LYw?dir=/&editing=false&openfile=true">REDCap User Manual (PDF)</a></p>
-  </div>
-  <div class="rc-card">
-    <h4>REDCap to BIDS</h4>
-    <p>Turn REDCap exports into a BIDS <code>participants.tsv</code> / <code>.json</code> dataset.</p>
-    <p><a href="https://github.com/JuliusWelzel/redcap2bids">redcap2bids on GitHub</a></p>
-  </div>
+<div class="rc-card" style="position:relative">
+<h4>rcol — Python package</h4>
+<p>Instrument templates and a full setup walkthrough (account, API key, upload, surveys).</p>
+<p style="margin-bottom:0"><a href="https://juliuswelzel.github.io/rcol/" class="stretched-link">Instruction page</a></p>
+</div>
+<div class="rc-card" style="position:relative">
+<h4>REDCap manual (UOL)</h4>
+<p>Getting started with REDCap at the University of Oldenburg.</p>
+<p style="margin-bottom:0"><a href="https://cloud.uol.de/s/ExeW2cXrw5M2LYw?dir=/&editing=false&openfile=true" class="stretched-link">REDCap User Manual (PDF)</a></p>
+</div>
+<div class="rc-card" style="position:relative">
+<h4>REDCap to BIDS</h4>
+<p>Turn REDCap exports into a BIDS <code>participants.tsv</code> / <code>.json</code> dataset.</p>
+<p style="margin-bottom:0"><a href="https://github.com/JuliusWelzel/redcap2bids" class="stretched-link">redcap2bids on GitHub</a></p>
+</div>
 </div>
 ```
