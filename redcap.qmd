@@ -2,7 +2,7 @@
 ---
 format:
   html:
-  anchor-sections: false
+    anchor-sections: false
     linkcolor: rgb(0,62,107)
     mainfont: Nunito Sans
 ---
