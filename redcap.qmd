@@ -113,7 +113,7 @@ Here are some helpful resources to establish a solid foundation in both REDCap a
 <div class="rc-card" style="position:relative">
 <h4>REDCap manual (UOL)</h4>
 <p>Getting started with REDCap at the University of Oldenburg.</p>
-<p style="margin-bottom:0"><a href="https://cloud.uol.de/s/ExeW2cXrw5M2LYw?dir=/&editing=false&openfile=true" class="stretched-link">REDCap User Manual (PDF)</a></p>
+<p style="margin-bottom:0"><a href="https://cloud.uol.de/s/MmTaWGEiYqDYZqD" class="stretched-link">REDCap User Manual (PDF)</a></p>
 </div>
 <div class="rc-card" style="position:relative">
 <h4>REDCap to BIDS</h4>
