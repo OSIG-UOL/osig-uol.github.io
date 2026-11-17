@@ -11,6 +11,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: calendar.qmd
+        text: Events Calendar
       - text: OSIG Newsletter
         menu:
           - text: "Newsletter 11th Issue: June 2025"
