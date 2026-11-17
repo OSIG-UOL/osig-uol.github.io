@@ -1,0 +1,58 @@
+
+---
+title: "OSIG Calendar"
+page-layout: full
+toc: false
+---
+
+## Discover upcoming OSIG events
+
+Explore upcoming Open Science workshops, talks,
+ReproducibiliTEA journal clubs, and community events at the
+University of Oldenburg.
+
+Click an event to see its description, location,
+and registration or meeting links.
+
+```{=html}
+<style>
+.osig-calendar {
+  margin: 2rem auto;
+  max-width: 1200px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
+}
+
+.osig-calendar iframe {
+  display: block;
+  width: 100%;
+  height: 760px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .osig-calendar {
+    padding: 4px;
+  }
+
+  .osig-calendar iframe {
+    height: 650px;
+  }
+}
+</style>
+
+<div class="osig-calendar">
+  <iframe
+    src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FBerlin&title=OSIG%20%26%20ReproducibiliTEA%20Events&src=OWQ3MDQ5NTA1MzdhNDU0YmIzZGE2MWQ1MGQyMjA2YTEyMDE2MTEwOWQ1YmRiNjY1ZjhlZjg0MDM1OGJjM2EwOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688"
+    title="OSIG & ReproducibiliTEA Events Calendar"
+    loading="lazy">
+  </iframe>
+</div>
+```
+
+*All event times are displayed in the
+Europe/Berlin time zone.*
