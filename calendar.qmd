@@ -47,66 +47,6 @@ and registration or meeting links.
 }
 </style>
 
-<!-- Edit Calendar button -->
-<div class="text-end mb-2">
-  <button type="button"
-    class="btn btn-outline-secondary btn-sm"
-    data-bs-toggle="modal"
-    data-bs-target="#editCalendarModal">
-    ✎ Add or Edit Events
-  </button>
-</div>
-
-<!-- Hidden popup -->
-<div class="modal fade" id="editCalendarModal"
-  tabindex="-1"
-  aria-labelledby="editCalendarTitle"
-  aria-hidden="true">
-
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h2 class="modal-title fs-5"
-          id="editCalendarTitle">
-          Edit OSIG Events
-        </h2>
-        <button type="button" class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          OSIG organizers can add or edit events
-          using the shared Google Calendar.
-        </p>
-        <p>
-          Please select
-          <strong>OSIG &amp; ReproducibiliTEA Events</strong>
-          when creating an event.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button"
-          class="btn btn-outline-secondary"
-          data-bs-dismiss="modal">
-          Cancel
-        </button>
-        <a
-          href="https://calendar.google.com/calendar/u/0/r"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary">
-          Open Google Calendar
-        </a>
-      </div>
-
-    </div>
-  </div>
-</div>
-
 <div class="osig-calendar">
   <iframe
     src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FBerlin&title=OSIG%20%26%20ReproducibiliTEA%20Events&src=OWQ3MDQ5NTA1MzdhNDU0YmIzZGE2MWQ1MGQyMjA2YTEyMDE2MTEwOWQ1YmRiNjY1ZjhlZjg0MDM1OGJjM2EwOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688"
