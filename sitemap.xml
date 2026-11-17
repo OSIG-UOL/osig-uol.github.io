@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/newsletter.html</loc>
-    <lastmod>2026-11-02T10:06:04.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/open_science_quests.html</loc>
-    <lastmod>2026-11-02T10:06:04.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/oosc.html</loc>
-    <lastmod>2026-11-02T10:06:04.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/index.html</loc>
-    <lastmod>2026-11-02T10:06:04.407Z</lastmod>
-  </url>
-  <url>
     <loc>https://OSIG-UOL.github.io/osig-uol.github.io/redcap.html</loc>
-    <lastmod>2026-11-02T10:06:04.752Z</lastmod>
+    <lastmod>2026-11-17T15:28:44.984Z</lastmod>
   </url>
   <url>
     <loc>https://OSIG-UOL.github.io/osig-uol.github.io/about.html</loc>
-    <lastmod>2026-11-02T10:06:04.407Z</lastmod>
+    <lastmod>2026-11-17T15:28:44.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/calendar.html</loc>
+    <lastmod>2026-11-17T15:28:44.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/oosc.html</loc>
+    <lastmod>2026-11-17T15:28:44.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/open_science_quests.html</loc>
+    <lastmod>2026-11-17T15:28:44.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/index.html</loc>
+    <lastmod>2026-11-17T15:28:44.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OSIG-UOL.github.io/osig-uol.github.io/newsletter.html</loc>
+    <lastmod>2026-11-17T15:28:44.745Z</lastmod>
   </url>
 </urlset>
