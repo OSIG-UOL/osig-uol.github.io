@@ -8,7 +8,7 @@ toc: false
 ## Discover upcoming OSIG events
 
 Explore upcoming Open Science workshops, talks,
-ReproducibiliTEA journal clubs, and community events at the
+ReproducibiliTEA journal club sessions, and community events at the
 University of Oldenburg.
 
 Click an event to see its description, location,
